@@ -1,4 +1,4 @@
-p, h1, h2, h3 {
+p, h1, h2, h3, div {
     font-family: monospace;
 }
 .foreground {
@@ -87,6 +87,7 @@ p, h1, h2, h3 {
 }
 #bib {
     text-align: right;
+    margin-left: 50%;
 }
 .bibelt:hover {
     display: block;
@@ -97,4 +98,57 @@ p, h1, h2, h3 {
 }
 .hide {
     display: none;
+}
+/* places and names hover */
+#place0:hover + #name0{
+  display: block;
+  color: red;
+}
+#place1:hover + #name1{
+  display: block;
+  color: red;
+}
+#place2:hover + #name2{
+  display: block;
+  color: red;
+}
+#place3:hover + #name3{
+  display: block;
+  color: red;
+}
+#place4:hover + #name4{
+  display: block;
+  color: red;
+}
+#place5:hover + #name5{
+  display: block;
+  color: red;
+}
+#place6:hover + #name6{
+  display: block;
+  color: red;
+}
+#place7:hover + #name7{
+  display: block;
+  color: red;
+}
+#place8:hover + #name8{
+  display: block;
+  color: red;
+}
+#place9:hover + #name9{
+  display: block;
+  color: red;
+}
+#place10:hover + #name10{
+  display: block;
+  color: red;
+}
+#place11:hover + #name11{
+  display: block;
+  color: red;
+}
+#place12:hover + #name12{
+  display: block;
+  color: red;
 }
