@@ -55,12 +55,12 @@ p, h1, h2, h3, div {
  .bgimg img {
     max-width: 20%; /* limit the image size to 50% of its original size */
     z-index: -1;
-    webkit-filter: blur(3px); /* Chrome, Safari, Opera */
+    -webkit-filter: blur(3px); /* Chrome, Safari, Opera */
     filter: blur(3px);
 }
 
 .bgimg img:hover {
-    webkit-filter: blur(0px); /* Chrome, Safari, Opera */
+    -webkit-filter: blur(0px); /* Chrome, Safari, Opera */
     filter: blur(0px);
 }
 /*FOREGROUND ELMTS*/
@@ -70,21 +70,12 @@ p, h1, h2, h3, div {
     display: flex; /* use flexbox for centering */
     justify-content: center; /* center the child horizontally */
     align-items: center; /* center the child vertically */
-    width: 25%;
+    width: 100%;
     position: relative;
 }
 .globe img{
-    max-width: 100%;
+    max-width: 50%;
     position: relative;
-}
-
-/*vane didactic*/
-.vane{
-  display: flex; /* use flexbox for centering */
-  justify-content: center; /* center the child horizontally */
-  align-items: center; /* center the child vertically */
-  width: 100%;
-  position: absolute;
 }
 
 /*bibliography or list*/
@@ -108,6 +99,14 @@ p, h1, h2, h3, div {
 .hide {
     display: none;
 }
+
+.note{
+  color: rgb(200, 200, 200);
+  margin-left: 40%;
+  margin-top: 1%;
+  font-size: 10px;
+}
+
 /* places and names hover */
 #place0:hover + #name0{
   display: block;
@@ -160,4 +159,56 @@ p, h1, h2, h3, div {
 #place12:hover + #name12{
   display: block;
   color: red;
+}
+
+
+/*vane didactic*/
+.vane{
+  width: 100%;
+  position: relative;
+}
+
+.vaneimgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+.vaneimgs img {
+  display: block;
+  width: 300px; /* Change this to the desired size of your images */
+  height: 300px; /* Change this to the desired size of your images */
+  margin-bottom: 10px; /* Change this to the desired spacing between the image and caption */
+  filter: grayscale();
+  -webkit-filter: grayscale(); /* Chrome, Safari, Opera */
+  position: relative;
+}
+
+.vaneimgs img:hover{
+  filter:none;
+}
+
+
+.vaneimgs figure {
+  margin: 0 10px; /* Change this to the desired margin between images */
+  text-align: center;
+}
+
+.vaneimgs figcaption {
+  width: 300px;
+  font-size: 14px; /* Change this to the desired font size */
+  line-height: 1.2; /* Change this to the desired line height */
+  word-wrap: break-word;
+}
+
+/*mobile viewing*/
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .content {
+    padding: 10px;
+  }
 }

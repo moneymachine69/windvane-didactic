@@ -41,6 +41,14 @@ dc.appendChild(document.createElement("br"));
 dc.classList.add("usa");
 select.appendChild(dc);
 
+var note = document.createElement("div");
+note.appendChild(document.createTextNode("*Note: this is a shortlist chosen by the artist and is not meant to represent a wholistic nor extensive view of US imperialism. Rather, it is an introductory attempt to draw an imperial history into a continuous narrative."));
+note.appendChild(document.createElement("br"));
+note.classList.add("note");
+select.appendChild(note);
+
+
+
 // for(var i = 0; i < names.length; i++) {
 //     var current = document.createElement("div");
 //     current.appendChild(document.createTextNode(names[i]));
