@@ -70,12 +70,21 @@ p, h1, h2, h3, div {
     display: flex; /* use flexbox for centering */
     justify-content: center; /* center the child horizontally */
     align-items: center; /* center the child vertically */
-    width: 100%;
-    position: absolute;
+    width: 25%;
+    position: relative;
 }
 .globe img{
     max-width: 100%;
     position: relative;
+}
+
+/*vane didactic*/
+.vane{
+  display: flex; /* use flexbox for centering */
+  justify-content: center; /* center the child horizontally */
+  align-items: center; /* center the child vertically */
+  width: 100%;
+  position: absolute;
 }
 
 /*bibliography or list*/
