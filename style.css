@@ -4,7 +4,14 @@ p, h1, h2, h3, div {
 .foreground {
     position: relative;
     z-index: 1;
-  }
+}
+canvas {
+    display: block;
+    margin: auto;
+}
+#sketchblock {
+  align-items: center;
+}
 
 /*scrolling animation at top*/
 .scrolling {

@@ -1,54 +1,44 @@
 let w;
 let h;
 
+const placesP = ["bahgdad", "kabul", "guantanamo", "veracruz", "al tanf", "nicaragua", "point au prince", "haiti", "dominican republic", "santo domingo", "grenada", "panama", "seoul"]; 
+const placesW = [1.68, 1.46, 3.27, 3.86, 1.66, 3.33, 2.76, 2.71, 2.73, 2.78, 2.89, 3.46, 1.26];
+const placesH = [2.99, 3.07, 2.56, 2.58, 3.06, 2.21, 2.5, 2.48,2.62, 2.55, 2.18, 2.09, 3.4];
+
+let placesNum = 0;
+
 function preload() {
   img = loadImage('globe.png');
+  
+  frameRate(0.5);
 }
 
 function setup() {
   w = img.width;
   h = img.height;
   let canvas = createCanvas(w, h);
-  canvas.parent("canvas");
+  canvas.parent("sketchblock");
+
 }
 
 function draw() {
   image(img, 0, 0);
 
   stroke('blue');
-  strokeWeight(20);
+  strokeWeight(7);
   
   //Chicago
   point(w/3.42, h/3.53);
   //DC
   point(w/3.23, h/3.17);
   
-  
   stroke('red');
-  //bahgdad
-  point(w/1.68, h/2.99);
-  //kabul
-  point(w/1.46, h/3.07);
-  //guantanamo
-  point(w/3.27, h/2.56);
-  //veracruz
-  point(w/3.86, h/2.58);
-  //al tanf
-  point(w/1.66, h/3.06);
-  //nicaragua
-  point(w/3.33, h/2.21);
-  //point au prince
-  point(w/2.76, h/2.5);
-  //haiti, general
-  point(w/2.71, h/2.48);
-  //DR
-  point(w/2.73, h/2.62);
-  //Santo DOmingo, DR
-  point(w/2.78, h/2.55);
-  //grenada
-  point(w/2.89, h/2.18);
-  //panama
-  point(w/3.46, h/2.09);
-  //seoul
-  point(w/1.26, h/3.40);
+  point(w/placesW[placesNum], h/placesH[placesNum]);
+  print(placesP[placesNum]);
+  if (placesNum < places.length - 1){
+    placesNum++;
+  }else{
+    placesNum = 0;
+  }
+  
 }
