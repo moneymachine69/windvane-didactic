@@ -1,9 +1,10 @@
 let w;
 let h;
 
-const placesP = ["bahgdad", "kabul", "guantanamo", "veracruz", "al tanf", "nicaragua", "point au prince", "haiti", "dominican republic", "santo domingo", "grenada", "panama", "seoul"]; 
-const placesW = [1.68, 1.46, 3.27, 3.86, 1.66, 3.33, 2.76, 2.71, 2.73, 2.78, 2.89, 3.46, 1.26];
-const placesH = [2.99, 3.07, 2.56, 2.58, 3.06, 2.21, 2.5, 2.48,2.62, 2.55, 2.18, 2.09, 3.4];
+const placesP = ["guantanamo", "veracruz", "point au prince", "nicaragua", "dominican republic", "seoul", "santo domingo", "grenada", "haiti", "panama",
+ "kabul", "bahgdad", "al tanf"]; 
+const placesW = [3.27, 1.68, 2.76, 3.33, 2.73, 1.26, 2.78, 2.89, 2.71, 3.46, 3.86, 1.46, 1.66];
+const placesH = [2.56, 2.99, 2.5, 2.21, 2.62, 3.4, 2.55, 2.18, 2.48, 2.09, 2.58, 3.07, 3.06];
 
 let placesNum = 0;
 
