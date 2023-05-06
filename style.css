@@ -210,6 +210,21 @@ canvas {
   word-wrap: break-word;
 }
 
+/* Call */
+
+.routes {
+  display: block;
+	align-items: center;
+	justify-content: center;
+  height: 100vh;
+}
+
+.routes img {
+  width: 100%;
+	height: auto;
+}
+
+
 /*mobile viewing*/
 @media only screen and (max-width: 600px) {
   body {
